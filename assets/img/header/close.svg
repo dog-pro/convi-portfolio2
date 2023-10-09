@@ -1,0 +1,19 @@
+<svg id="close.svg" xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #00b2ed;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        font-family: Meiryo;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_2" data-name="長方形 2" class="cls-1" x="1" y="1" width="90" height="90"/>
+  <text id="_" data-name="×" class="cls-2" transform="translate(23.358 64.974) scale(5.243)">×</text>
+</svg>

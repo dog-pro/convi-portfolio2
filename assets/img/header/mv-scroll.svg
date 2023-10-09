@@ -1,0 +1,18 @@
+<svg id="mv-scroll.svg" xmlns="http://www.w3.org/2000/svg" width="33" height="52" viewBox="0 0 33 52">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="角丸長方形_674" data-name="角丸長方形 674" class="cls-1" x="1.5" y="1.5" width="30" height="49" rx="15" ry="15"/>
+  <rect id="角丸長方形_675" data-name="角丸長方形 675" class="cls-2" x="15.5" y="26.5" width="3" height="13" rx="1.5" ry="1.5"/>
+</svg>

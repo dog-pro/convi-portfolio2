@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+/* SP style */
+@media screen and (max-width: 768px){
+
+/* header */
+header{
+  /* position: relative; */
+}
+
+/* nav */
+nav{
+  /* position: relative; */
+  /* display: none; */
+}
+
+.p-nav__containerPC{
+  display: none;
+}
+
+.p-nav__containerSP{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* width: 15%;
+  height: 10%; */
+}
+
+.p-nav__containerSP li{}
+
+.p-nav__containerSP li img{
+  width: 55px;
+}
+
+/* main */
+.p-mainPhoto{
+  background-size: cover;
+  width: 100%;
+  /* height: auto; */
+}
+
+.p-mainPhoto img{
+  width: 100%;
+  height: 55vh;
+  background-size: cover;
+}
+
+.u-section{
+  padding: 10% 5%;
+  text-align: -webkit-center;
+}
+
+
+.p-mainTitle{
+  position: absolute;
+  top: 85px;
+  left: 35px;
+  color: white; 
+}
+
+.p-mainTitle p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  line-height: 2;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.p-mainTitle a img{
+  width: 80%;
+}
+
+.p-mainScroll{
+  display: none;
+}
+
+/* INFORMATION */
+.p-information{
+  width: 100%;
+  max-width: 0 auto;
+}
+
+.p-information__title{
+  width: 70%;
+  margin: 15% 0 10%;
+}
+
+.p-information ul{
+  list-style: none;
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.p-information li{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.p-information ul img{
+  width: 70%;
+}
+
+.p-information ul p{
+  font-size: 1.2;
+  font-weight: 600;
+}
+
+.p-information__date{
+  width: 70px;
+  margin: -18px 0 0 11px;
+  padding: 13px 10px;
+  background-color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* SERVICE */
+.p-service{
+
+}
+
+.p-service__title{
+  display: none;
+}
+.p-service__titleSP img{
+  width: 85%;
+}
+
+.p-service__titleSP p{
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
+  font-size: 13.5px;
+  margin-top: 15px;
+  line-height: 21px;
+}
+
+.p-service__mainImage img{
+  display: none;
+}
+
+.p-service__gray{
+  position: relative;
+}
+
+.p-service__gray img{
+  position: absolute;
+  top: -155px;
+  left: 0;
+  z-index: -1;
+  width: 100vh;
+  height: 255vh;
+  margin: 0 calc(50% - 50vw);
+}
+
+.p-service__contents{
+  position: relative;
+}
+
+/* left */
+.p-service__contentsLeft{
+  list-style: none;
+  margin-top: 8%;
+}
+
+.p-service__contentsLeft li{
+  position: relative;
+  margin-bottom: 30%;
+  padding: 15% 0;
+  height: 95px;
+  color: white;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  object-fit: cover;
+}
+
+.p-service__contentsLeft__image{
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.p-service__contentsLeft p{
+  width: 80%;
+}
+
+.p-service__contentsTitle{
+  width: 80%;
+  margin-bottom: 8%;
+  object-fit: cover;
+}
+
+/* right */
+.p-service__contentsRight{
+  position: relative;
+  margin-top: 8%;
+}
+
+.p-service__contentsRight div{
+  position: relative;
+  margin-bottom: 30%;
+  padding: 15% 0;
+  height: 95px;
+  color: white;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  object-fit: cover;
+}
+
+.p-service__contentsRight__image{
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.p-service__contentsRight p{
+  width: 80%;
+}
+
+.br{
+  content: "\A" ;
+	white-space: pre ;
+}
+
+.allow__white{
+  position: absolute;
+  bottom: -30%;
+  right: 5%;
+}
+
+.dli-arrow-white {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  line-height: 1;
+  position: relative;
+  width: 3.5em;
+  height: 0.2em;
+  background: currentColor;
+}
+
+.dli-arrow-white::before {
+  content: '';
+  width: 1em;
+  height: -0.35em;
+  border: 0.2em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  position: absolute;
+  top: 50%;
+  right: -0.05em;
+  box-sizing: border-box;
+}
+
+
+.allow__black{
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+}
+
+.dli-arrow-black {
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  line-height: 1;
+  position: relative;
+  width: 3.5em;
+  height: 0.1em;
+  background: currentColor;
+}
+
+.dli-arrow-black::before {
+  content: '';
+  width: 1em;
+  height: -0.35em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  position: absolute;
+  top: 50%;
+  right: -0.05em;
+  box-sizing: border-box;
+}
+
+
+/* WHO WE ARE */
+.p-introduce{
+  position: relative;
+}
+
+/* left */
+.p-introduceLeft img{
+  width: 100%;
+}
+
+/* right */
+.p-introduceRight{
+  text-align: left;
+}
+
+.p-introduceTitle{
+  /* position: absolute;
+  z-index: 1; */
+  width: 50%;
+  margin: 7%;
+}
+
+.p-introduceRight__vision{
+  display: none;
+}
+
+.p-introduceRight__visionSP{
+  position: absolute;
+  bottom: 30%;
+  right: 8%;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.p-introduceGray{
+  position: absolute;
+  z-index: -1;
+  bottom: -7%;
+  left: 0;
+  width: 100%;
+  height: 65%;
+}
+
+.p-introduce__company{
+    width: 60%;
+    height: 20%;
+    padding: 8% 5%;
+    margin-left: 15%;
+    text-align: left;
+    background-color: white;
+}
+
+.p-introduce__company p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+/* PROJECT */
+.p-project__title p{
+  text-align: left;
+  font-weight: normal;
+  font-size: 13.5px;
+  margin-top: 7%;
+  line-height: 1.5rem;
+}
+
+.p-project__title img{
+  width: 70%;
+}
+
+.p-project ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40%;
+}
+
+.p-project ul li{
+  width: 50%;
+  margin-top: -30%;
+  text-align: left;
+}
+
+.p-project ul img{
+  height: 40%;
+}
+
+.p-project__customer{
+  width: 100%;
+  margin: -23px 0 0 10px;
+  z-index: 1;
+}
+
+.p-project__case{
+  position: relative;
+  width: 60px;
+  padding: 15px 10px;
+  text-align: center;
+  align-items: center;
+  background-color: #00b2ed;
+  color: #fff;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.p-project__link{
+  width: 80%;
+  height: 10%;
+  border: #00b2ed 2px solid;
+  padding: 5% 0;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.p-project ul li p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+/* CONTACT */
+.p-contact__left img{
+  display: none;
+}
+
+.p-contact__right img{
+  display: none;
+}
+
+.p-footer__background{
+  display: none;
+}
+
+.p-footer__topImage{
+  display: none;
+}
+
+/* center */
+.p-contact{
+  height: 525px;
+  align-items: center;
+}
+
+.p-contact__center{
+  /* width: 100%; */
+  height: 93%;
+  padding: 12% 7.5% 0;
+  text-align: center;
+  background-color: #005fa7;
+  color: #fff;
+}
+
+
+.p-contact__title{
+
+}
+
+.p-contact__title img{
+  width: 45%;
+}
+
+.p-contact__title p{
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 5% 0 10%;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+    font-weight: bold;
+}
+
+.p-contact__form{
+  /* width: 85%; */
+  height: 80px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  color: #005fa7;
+}
+
+.p-contact__form p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.p-contact__tel{
+  /* width: 330px; */
+  height: 70px;
+  align-items: center;
+  margin: 10% auto;
+  background-color: #005fa7;
+  border: #fff 2px solid;
+}
+
+.p-contact__tel{
+  /* width: 65%; */
+}
+
+.p-contact__tel img{
+  width: 70%;
+}
+
+/* footer */
+.p-footer__top{
+  display: none;
+}
+
+.p-footer__bottom{
+  height: 53px;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+}
