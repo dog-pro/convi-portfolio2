@@ -80,6 +80,7 @@ nav{
 .p-information{
   width: 100%;
   max-width: 0 auto;
+  overflow: hidden;
 }
 
 .p-information__title{
@@ -149,6 +150,7 @@ nav{
 
 .p-service__gray{
   position: relative;
+  overflow: hidden;
 }
 
 .p-service__gray img{
@@ -476,8 +478,9 @@ nav{
 }
 
 .p-contact__form{
-  /* width: 85%; */
-  height: 80px;
+  height: 15%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   background-color: hsl(0, 0%, 100%);
@@ -492,14 +495,12 @@ nav{
 .p-contact__tel{
   /* width: 330px; */
   height: 70px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 10% auto;
   background-color: #005fa7;
   border: #fff 2px solid;
-}
-
-.p-contact__tel{
-  /* width: 65%; */
 }
 
 .p-contact__tel img{
