@@ -149,12 +149,26 @@ header > nav{
   cursor: pointer;
 }
 
-.p-information li a{
-  /* position: relative; */
+.p-information__image{
+  /* 背景にホバー時の黒半透明を指定 */
+  display: inline-block;
+  background-color: black;
+  /* これを記述することではみ出た部分を非表示にします。 */
+  overflow:hidden;
+  width: 100%;
 }
 
 .p-information li img{
+  display: block;
   width: 100%;
+  /* ホバー時を外した後の速さ */
+  transition:0.5s all;
+}
+
+.p-information li img:hover{
+  opacity: 0.7;/* 黒透明の明度 */
+  transform:scale(1.1,1.1);/* 拡大の幅 */
+  transition:0.5s all;/*拡大の早さ*/
 }
 
 .p-information li:hover{
@@ -285,19 +299,36 @@ header > nav{
   margin: 0 10px 10px 0;
   width: 48%;
   height: 60%;
+  display: inline-block;
+  background-color: black;
 }
 
 .p-service__contentsLeft__image{
-  position: absolute; 
-  z-index: -1;
+  /* position: absolute;  */
+  /* z-index: -1; */
   background-size: cover;
   width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.p-service__contentsLeft__image:hover{
+  opacity: 0.7;
 }
 
 .p-service__contentsTitle{
-  display: block;
-  margin: 15% auto 10%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  /* display: block; */
+  /* margin: 15% auto 10%; */
   width: 70%;
+}
+
+.p-service__contentsLeft li p{
+  position: absolute;
+  z-index: 2;
+  top: 10px;
 }
 
 .p-service__contentsTitle-last{
@@ -439,16 +470,27 @@ header > nav{
   right: 5%;
   bottom: 30px;
   background-color: #fff;
+align-items: center;
   font-weight: bold;
   font-style: normal;
   cursor: pointer;
 }
 
+.p-introduce__company:hover{
+  opacity: 0.5;
+}
+
 
 .allow__black{
   position: absolute;
-  bottom: 5%;
-  right: 7%;
+  bottom: 45%;
+  right: -10%;
+  transition: 0.5s;
+}
+
+.p-introduce__company:hover .allow__black{
+  transition: 0.5s;
+  transform: translateX(10px);
 }
 
 .dli-arrow-black {
@@ -512,8 +554,29 @@ header > nav{
   cursor: pointer;
 }
 
-.p-project ul li img{
+.p-project__image{
+  display: inline-block;
+  /* これを記述することではみ出た部分を非表示にします。 */
+  overflow:hidden;
   width: 100%;
+}
+
+.p-project ul li img{
+  display: block;
+  width: 100%;
+  /* ホバー時を外した後の速さ */
+  transition:0.5s all;
+}
+
+.p-project li img:hover{
+  opacity: 0.7;/* 黒透明の明度 */
+  transform:scale(1.1,1.1);/* 拡大の幅 */
+  transition:0.5s all;/*拡大の早さ*/
+}
+
+.p-project li:hover{
+  opacity: 1;
+  color: #005fa7;
 }
 
 
@@ -547,11 +610,22 @@ header > nav{
   width: 360px;
   height: 100px;
   margin: 0 auto;
-  cursor: pointer;
 }
 
 .p-project__linkButton{
   border:2px solid #00b2ed;
+  transition: 0.5s;
+}
+
+.p-project__linkButton:hover{
+  transition: 0.3s;
+  background-color: #00b2ed;
+  color: white;
+}
+
+.p-project__linkButton:hover .p-project__allowBlack{
+  transition: 0.5s;
+  transform: translateX(10px);
 }
 
 .p-project__link p{
@@ -566,6 +640,7 @@ header > nav{
   position: absolute;
   bottom: 63%;
   right: -5%;
+  transition: 0.5s;
 }
 
 .dli-arrow-black {
