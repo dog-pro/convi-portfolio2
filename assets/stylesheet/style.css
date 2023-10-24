@@ -52,23 +52,23 @@ nav{
   width: 35vw;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 8%;
 }
 
 .p-mainTitle img{
-  width: 100%;
+  width: 90%;
   height: 20%;
   background-size: cover;
 }
 
 .p-mainTitle p{
-  width: 100%;
+  width: 128%;
   color: white;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
   line-height: 1.8;
-  font-size: 18px;
-  margin-top: 40px;
+  font-size: 14px;
+  margin-top: 6%;
 }
 
 .p-mainScroll{
@@ -78,6 +78,11 @@ nav{
   width: 20px;
   height: 40px;
   cursor: pointer;
+}
+
+.p-mainScroll:hover{
+  opacity: 0.3;
+  transition: 1s;
 }
 
 /* nav */
@@ -92,6 +97,7 @@ header > nav{
 .p-headerLogo{
   width: 10vw;
   margin: 3% 0 0 4%;
+  cursor: pointer;
 }
 
 .p-headerLogo img{
@@ -107,7 +113,30 @@ header > nav{
   align-items: center;
   background-color: white;
   font-size: large;
+  list-style: none;
 }
+
+.p-nav_containerPC li{
+  display:inline-block;
+	position:relative;
+}
+
+.p-nav_containerPC > li:hover .p-nav__dropdown{
+  border-bottom: 1px solid #00b2ed;
+  transition: 1s;
+  visibility: visible;
+  }
+
+.p-nav__dropdown{
+  /* display: none; */
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* list-style: none; */
+}
+
+.p-nav__dropdown
 
 .p-nav_containerSP{
   display: none;
@@ -288,6 +317,7 @@ header > nav{
 /* left */
 .p-service__contentsLeft{
   width: 66%;
+  height: 0%;
   margin: 0 5px;
   display: flex;
   flex-wrap: wrap;
@@ -304,48 +334,54 @@ header > nav{
 }
 
 .p-service__contentsLeft__image{
-  /* position: absolute;  */
-  /* z-index: -1; */
   background-size: cover;
   width: 100%;
   height: 100%;
   display: block;
+  opacity: 0.5;
 }
 
 .p-service__contentsLeft__image:hover{
-  opacity: 0.7;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.p-service__contentsLeft li p{
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+  bottom: 23%;
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
 }
 
 .p-service__contentsTitle{
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 23%;
+  left: 14%;
   /* display: block; */
   /* margin: 15% auto 10%; */
   width: 70%;
 }
 
-.p-service__contentsLeft li p{
+.p-service__contentsTitle-last{
   position: absolute;
   z-index: 2;
-  top: 10px;
-}
-
-.p-service__contentsTitle-last{
-  display: block;
-  margin: 15% auto 10%;
+  top: 23%;
+  left: 30%;
+  width: 70%;
+  /* display: block;
+  margin: 15% auto 10%; */
   width: 40%;
 }
 
-
-.p-service__contentsLeft li a p{
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #fff;
-  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
-  font-weight: bold;
-  text-align: center;
+.p-service__contentsLeft li:hover .dli-arrow-white{
+  color: #005fa7;
 }
 
 /* right */
@@ -354,18 +390,47 @@ header > nav{
   margin: 0 5px;
 }
 
-.p-service__contentsRight div{
+/* .p-service__contentsRight div{
   position: relative;
+} */
+
+.p-service__contentsRight > div{
+  position: relative;
+  margin: 0 10px 10px 0;
+  width: 100%;
+  height: 94%;
+  display: inline-block;
+  background-color: black;
 }
 
-.p-service__contentsRight__image{
+/* .p-service__contentsRight__image{
   position:absolute;
   z-index: -1;
   background-size: cover;
   width: 100%;
+} */
+
+.p-service__contentsRight__image{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.5;
 }
 
-.p-service__contentsRight div p{
+.p-service__contentsRight__image:hover{
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.p-service__contentsTitleRight{
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 14%;
+  width: 70%;
+}
+/* .p-service__contentsRight div p{
   width: 80%;
   margin: 0 auto;
   font-size: 1rem;
@@ -373,6 +438,19 @@ header > nav{
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
   text-align: center;
+} */
+
+.p-service__contentsRight div p{
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+  bottom: 35%;
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
 }
 
 .allow{
@@ -405,6 +483,10 @@ header > nav{
   top: 50%;
   right: -0.05em;
   box-sizing: border-box;
+}
+
+.p-service__contentsRight > div:hover .dli-arrow-white{
+  color: #005fa7;
 }
 
 /* WHO WE ARE */
@@ -470,7 +552,7 @@ header > nav{
   right: 5%;
   bottom: 30px;
   background-color: #fff;
-align-items: center;
+  align-items: center;
   font-weight: bold;
   font-style: normal;
   cursor: pointer;
@@ -480,6 +562,10 @@ align-items: center;
   opacity: 0.5;
 }
 
+.p-introduce__company p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
 
 .allow__black{
   position: absolute;
@@ -678,30 +764,39 @@ align-items: center;
 }
 
 .p-contact__background{
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   display: flex;
 }
 
 /* left */
 .p-contact__left{
-  width: 100%;
+  width: 50%;
   background-size: cover;
+}
+
+.p-contact__left img{
+  width: 100%;
 }
 
 /* right */
 .p-contact__right{
-  width: 100%;
+  width: 50%;
   background-size: cover;
+}
+
+.p-contact__right img{
+  width: 100%;
 }
 
 /* center */
 .p-contact__center{
   position: absolute;
   top: -33px;
-  left: 33%;
+  left: 38%;
   z-index: 1;
   width: 450px;
-  padding: 3% 0;
+  padding: 5% 0;
   text-align: center;
   background-color: #005fa7;
   color: #fff;
@@ -748,6 +843,50 @@ align-items: center;
 .p-contact__form p{
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
+  font-size: 18px;
+}
+
+.p-project__allowBlue{
+  position: absolute;
+  top: 46%;
+  right: 8%;
+  transition: 0.5s;
+}
+
+.dli-arrow-blue {
+  display: inline-block;
+  vertical-align: middle;
+  color: #00a0e9;
+  line-height: 1;
+  position: relative;
+  width: 3em;
+  height: 0.12em;
+  background: currentColor;
+}
+
+.dli-arrow-blue::before {
+  content: '';
+  width: 0.5em;
+  height: -0.35em;
+  border: 0.12em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  position: absolute;
+  top: 50%;
+  right: -0.05em;
+  box-sizing: border-box;
+}
+
+.p-contact__form:hover{
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.p-contact__form:hover .p-project__allowBlue{
+  transition: 0.3s;
+  transform: translateX(10px);
 }
 
 .p-contact__tel{
@@ -775,10 +914,11 @@ footer{
   margin: 0 auto;
 }
 
+/* top */
 .p-footer__top{
   position: relative;
   display: flex;
-  width: 100%;
+  max-width: 1040px;
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -787,20 +927,26 @@ footer{
 
 .p-footer__background{
 width: 100vw;
+margin: 0 calc(50% - 50vw);
 height: 100%;
 position: absolute;
 z-index: -1;
 }
 
 .p-footer__topImage{
-  margin-left: 25%;
+width: 50%;
+height: 100%;
 }
 
 .p-footer__topImage a img{
-  width: 65%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .p-footer__right{
+  width: 50%;
   display: flex;
   text-align: left;
   align-items: top;
@@ -818,6 +964,11 @@ z-index: -1;
   list-style: none;
   cursor: pointer;
   font-size: 15px;
+}
+
+.p-footer__right ul li:hover{
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 .p-footer__bottom{

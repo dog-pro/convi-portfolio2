@@ -23,6 +23,7 @@ nav{
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
   /* width: 15%;
   height: 10%; */
 }
@@ -32,6 +33,21 @@ nav{
 .p-nav__containerSP li img{
   width: 55px;
 }
+
+
+.p-headerLogo{
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  width: 20%;
+  /* margin: 3% 0 0 4%; */
+  cursor: pointer;
+}
+
+.p-headerLogo img{
+  width: 100%;
+}
+
 
 /* main */
 .p-mainPhoto{
@@ -175,70 +191,113 @@ nav{
 
 .p-service__contentsLeft li{
   position: relative;
-  margin-bottom: 30%;
-  padding: 15% 0;
-  height: 95px;
+  height: 277px;
+  margin-bottom: 3%;
   color: white;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
-  object-fit: cover;
+  display: inline-block;
+  background-color: black;
 }
 
 .p-service__contentsLeft__image{
-  width: 100%;
-  height: 280px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
   background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.5;
 }
 
 .p-service__contentsLeft p{
   width: 80%;
+  position: absolute;
+
+  z-index: 2;
+  bottom: 23%;
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
 }
 
 .p-service__contentsTitle{
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  left: 10%;
   width: 80%;
   margin-bottom: 8%;
-  object-fit: cover;
 }
 
 /* right */
 .p-service__contentsRight{
-  position: relative;
-  margin-top: 8%;
+  /* position: relative; */
+  /* margin-top: 8%; */
 }
 
-.p-service__contentsRight div{
+.p-service__contentsRight > div{
   position: relative;
-  margin-bottom: 30%;
-  padding: 15% 0;
-  height: 95px;
+  width: 100%;
+  height: 277px;
+  margin-bottom: 3%;
   color: white;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
-  object-fit: cover;
+  display: inline-block;
+  background-color: black;
 }
 
 .p-service__contentsRight__image{
-  width: 100%;
-  height: 280px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  z-index: -1;
   background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.5;
 }
 
 .p-service__contentsRight p{
   width: 80%;
+  position: absolute;
+
+  z-index: 2;
+  bottom: 23%;
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.p-service__contentsTitle-last{
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  left: 25%;
+  width: 50%;
+  margin-bottom: 8%;
+}
+
+.p-service__contentsTitleRight{
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  left: 10%;
+  width: 80%;
+  margin-bottom: 8%;
 }
 
 .br{
   content: "\A" ;
 	white-space: pre ;
+}
+
+.allow{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
 
 .allow__white{
@@ -381,17 +440,19 @@ nav{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40%;
+  /* margin-top: 5%; */
 }
 
 .p-project ul li{
-  width: 50%;
-  margin-top: -30%;
+  width: 48%;
+  /* margin-top: -30%; */
+  margin: 9% 1% 0;
   text-align: left;
 }
 
 .p-project ul img{
-  height: 40%;
+  /* height: 40%; */
+  width: 100%;
 }
 
 .p-project__customer{
@@ -402,8 +463,8 @@ nav{
 
 .p-project__case{
   position: relative;
-  width: 60px;
-  padding: 15px 10px;
+  width: 63px;
+  padding: 7px 6px;
   text-align: center;
   align-items: center;
   background-color: #00b2ed;
@@ -413,10 +474,11 @@ nav{
 }
 
 .p-project__link{
-  width: 80%;
+  width: 70%;
   height: 10%;
   border: #00b2ed 2px solid;
-  padding: 5% 0;
+  padding: 5%;
+  margin: 15% 0 5%;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
 }
@@ -424,8 +486,18 @@ nav{
 .p-project ul li p{
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
+}
+
+.p-project__linkButton{
+  position: relative;
+}
+
+.p-project__allowBlack{
+  position: absolute;
+  top: 0;
+  right: -19%;
 }
 
 /* CONTACT */
@@ -447,14 +519,14 @@ nav{
 
 /* center */
 .p-contact{
-  height: 525px;
+  /* height: 525px; */
   align-items: center;
 }
 
 .p-contact__center{
   /* width: 100%; */
   height: 93%;
-  padding: 12% 7.5% 0;
+  padding: 14% 7.5%;
   text-align: center;
   background-color: #005fa7;
   color: #fff;
@@ -478,11 +550,12 @@ nav{
 }
 
 .p-contact__form{
-  height: 15%;
+  /* height: 15%; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 10%;
   background-color: hsl(0, 0%, 100%);
   color: #005fa7;
 }
@@ -505,6 +578,10 @@ nav{
 
 .p-contact__tel img{
   width: 70%;
+}
+
+.p-contact__openhour{
+  font-size: 13px;
 }
 
 /* footer */
