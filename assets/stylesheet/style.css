@@ -331,6 +331,7 @@ header > nav{
   height: 60%;
   display: inline-block;
   background-color: black;
+  cursor: pointer;
 }
 
 .p-service__contentsLeft__image{
@@ -401,6 +402,7 @@ header > nav{
   height: 94%;
   display: inline-block;
   background-color: black;
+  cursor: pointer;
 }
 
 /* .p-service__contentsRight__image{

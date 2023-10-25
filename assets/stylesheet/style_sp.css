@@ -28,12 +28,34 @@ nav{
   height: 10%; */
 }
 
-.p-nav__containerSP li{}
-
-.p-nav__containerSP li img{
+/* .p-nav__containerSP li img{
   width: 55px;
+} */
+
+.p-nav__mail{
+  width: 55px;
+  height: 55px;
+  border: #00b2ed;
+  background-color: #00b2ed;
 }
 
+/* humburger */
+.p-nav__humburger{
+  width: 55px;
+  height: 55px;
+  border: 1.5px solid #00b2ed;
+  background-color: white;
+}
+
+.p-nav__humburger-button{
+
+}
+
+.barTop{}
+
+.barMiddle{}
+
+.barBottom{}
 
 .p-headerLogo{
   position: absolute;
@@ -198,6 +220,7 @@ nav{
   font-weight: bold;
   display: inline-block;
   background-color: black;
+  cursor: pointer;
 }
 
 .p-service__contentsLeft__image{
@@ -247,6 +270,7 @@ nav{
   font-weight: bold;
   display: inline-block;
   background-color: black;
+  cursor: pointer;
 }
 
 .p-service__contentsRight__image{
