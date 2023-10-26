@@ -39,23 +39,8 @@ nav{
   background-color: #00b2ed;
 }
 
-/* humburger */
-.p-nav__humburger{
-  width: 55px;
-  height: 55px;
-  border: 1.5px solid #00b2ed;
-  background-color: white;
-}
-
-.p-nav__humburger-button{
-
-}
-
-.barTop{}
-
-.barMiddle{}
-
-.barBottom{}
+/* hamburger */
+/* hamburger.cssに記載 */
 
 .p-headerLogo{
   position: absolute;
