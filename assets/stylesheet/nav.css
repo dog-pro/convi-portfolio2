@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* PC style */
+@media screen and (min-width: 769px) {
+  nav{
+    /* height: 200px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .p-nav__mail{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #00b2ed;
+    transition: background-color .3s; /* 背景色の変化をアニメーション化 */
+
+  }
+  
+  .p-nav__mail::before:hover{
+    /* position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/mail2.png");  */
+  }
+  
+  .p-nav_containerSP{
+    /* display: none; */
+  }
+  
+
+  /* ナビゲーションメニュー */
+  .nav-menu {
+    background-color: #fff; /* メニューの背景色 */
+    color: #333; /* メニューテキストの色 */
+  }
+
+  .menu-list {
+    display: flex;
+    justify-content: center; /* メニューアイテムを中央揃えに */
+  }
+
+  .menu-item {
+    padding: 20px 5px;
+    background-color: white; /* メニューアイテムの背景色 */
+    position: relative;
+    transition: background-color .3s; /* 背景色の変化をアニメーション化 */
+  }
+
+  /* メニューアイテムのホバースタイル */
+  .menu-item:hover .drop-menu-list {
+    transform: scaleY(1); /* ドロップダウンメニューの表示 */
+  }
+
+  .menu-item:hover {
+    border-bottom:5px solid #00b2ed;
+    background-color: white; /* メニューアイテムのホバー時の背景色 */
+    transition: background-color .3s; /* 背景色の変化をアニメーション化 */
+  }
+
+  .drop-menu-item:hover a{
+    transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
+  }
+
+  .menu-item a {
+    align-items: center;
+    font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+    font-weight: bold;
+    color: black; /* メニューアイテム内のリンクテキストの色 */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none; /* リンクの下線を非表示 */
+    width: 120px;
+  }
+
+  /* ドロップダウンメニュー */
+  .drop-menu {
+    position: relative;
+  }
+
+  .drop-menu-list {
+    /* border-top:5px solid #00b2ed; */
+    left: 0;
+    position: absolute;
+    top: 105%;
+    transform: scaleY(0); /* ドロップダウンメニューの非表示 */
+    transform-origin: center top; /* 変形を適応する基準を設定 */
+    transition: transform .3s; /* 表示の変化をアニメーション化 */
+    width: 280px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .drop-menu-item {
+    text-align: left;
+    white-space: wrap;
+    background-color: white; /* ドロップダウンメニューの背景色 */
+    transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
+  }  
+}
+
+
+
+/* SP style */
+@media screen and (max-width: 768px){
+nav{
+  /* position: relative; */
+  /* display: none; */
+}
+
+.p-nav__container{
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* z-index: 3; */
+  width: 100%;
+  height: 90%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.p-nav__containerSP{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  /* width: 15%;
+  height: 10%; */
+}
+
+/* .p-nav__containerSP li img{
+  width: 55px;
+} */
+
+.p-nav__mail{
+  width: 55px;
+  height: 55px;
+  border: #00b2ed;
+  background-color: #00b2ed;
+}
+
+}
