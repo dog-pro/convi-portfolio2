@@ -65,14 +65,6 @@ position: relative;
   height: 75px;
 }
 
-header > nav{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .p-headerLogo{
   width: 10vw;
   margin: 3% 0 0 4%;

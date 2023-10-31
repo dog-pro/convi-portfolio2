@@ -13,9 +13,9 @@ header{}
 /* hamburger.cssに記載 */
 
 .p-headerLogo{
-  position: absolute;
-  top: 2%;
-  left: 3%;
+  /* position: absolute; */
+  /* top: 2%; */
+  /* left: 3%; */
   width: 20%;
   /* margin: 3% 0 0 4%; */
   cursor: pointer;
@@ -26,10 +26,15 @@ header{}
 }
 
 /* main */
-.p-mainPhoto{
+.p-mainPhoto::before{
+  background-image: url("../img/header/main_photo.jpg");
+  /* background-color: black; */
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  /* opacity: 0.3; */
   width: 100%;
-  /* height: auto; */
+  height: 100px;
 }
 
 .p-mainPhoto img{

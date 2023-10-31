@@ -3,21 +3,33 @@
 /* PC style */
 @media screen and (min-width: 769px) {
   nav{
-    /* height: 200px; */
+    position: absolute;
+    /* display: flex; */
     width: 100%;
-    display: flex;
+    /* align-items: center; */
     justify-content: space-between;
   }
-  
+
   .p-nav__mail{
     position: relative;
     width: 100px;
-    height: 100px;
+    height: 90px;
     background-color: #00b2ed;
     transition: background-color .3s; /* 背景色の変化をアニメーション化 */
-
   }
   
+  .p-nav__mail::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    content: url("../img/mail2.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
   .p-nav__mail::before:hover{
     /* position: absolute;
     top:0;
@@ -38,17 +50,22 @@
 
   /* ナビゲーションメニュー */
   .nav-menu {
+    position: absolute;
+    top: 50px;
+    right: 25px;
     background-color: #fff; /* メニューの背景色 */
     color: #333; /* メニューテキストの色 */
   }
 
   .menu-list {
     display: flex;
+    align-items: center;
     justify-content: center; /* メニューアイテムを中央揃えに */
   }
 
   .menu-item {
-    padding: 20px 5px;
+    margin: 0 20px;
+    padding: 20px 0;
     background-color: white; /* メニューアイテムの背景色 */
     position: relative;
     transition: background-color .3s; /* 背景色の変化をアニメーション化 */
@@ -75,10 +92,9 @@
     font-weight: bold;
     color: black; /* メニューアイテム内のリンクテキストの色 */
     display: flex;
-    height: 50px;
-    justify-content: center;
+    padding: 15px;
+    line-height: 1;
     text-decoration: none; /* リンクの下線を非表示 */
-    width: 120px;
   }
 
   /* ドロップダウンメニュー */
@@ -87,7 +103,6 @@
   }
 
   .drop-menu-list {
-    /* border-top:5px solid #00b2ed; */
     left: 0;
     position: absolute;
     top: 105%;
@@ -100,8 +115,7 @@
   }
 
   .drop-menu-item {
-    text-align: left;
-    white-space: wrap;
+    font-size: 13px;
     background-color: white; /* ドロップダウンメニューの背景色 */
     transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
   }  
@@ -111,9 +125,44 @@
 
 /* SP style */
 @media screen and (max-width: 768px){
-nav{
+  header{
+    padding: 0 20px;
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  nav{
   /* position: relative; */
   /* display: none; */
+}
+
+.nav-menu{
+
+}
+
+.menu-list{
+  text-decoration: none;
+  /* background-color: black; */
+  /* opacity: 0.7; */
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.menu-list a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item{
+  padding: 20px 0;
+  border-bottom:1px solid #fff;
+}
+
+.drop-menu{
+}
+
+.drop-menu-item{
+  line-height: 2.5;
 }
 
 .p-nav__container{
@@ -128,16 +177,6 @@ nav{
   opacity: 0.5;
 }
 
-.p-nav__containerSP{
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 3;
-  /* width: 15%;
-  height: 10%; */
-}
-
 /* .p-nav__containerSP li img{
   width: 55px;
 } */
@@ -147,6 +186,16 @@ nav{
   height: 55px;
   border: #00b2ed;
   background-color: #00b2ed;
+}
+
+.p-nav__containerSP{
+  display: flex;
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  z-index: 3;
+  /* width: 15%;
+  height: 10%; */
 }
 
 }
