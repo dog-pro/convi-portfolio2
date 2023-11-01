@@ -158,7 +158,19 @@
   border-bottom:1px solid #fff;
 }
 
+.menu-item > a{
+  padding: 20px 0;
+
+  font-size: 20px;
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+}
+
 .drop-menu{
+}
+
+.drop-menu-list{
+  margin-top: 10px;
 }
 
 .drop-menu-item{
@@ -181,7 +193,7 @@
   width: 55px;
 } */
 
-.p-nav__mail{
+.p-nav__mailSP{
   width: 55px;
   height: 55px;
   border: #00b2ed;
@@ -190,7 +202,7 @@
 
 .p-nav__containerSP{
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 3;
