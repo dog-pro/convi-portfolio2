@@ -9,11 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/stylesheet/reset.css">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css"href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <!-- css -->
     <link rel="stylesheet" href="./assets/stylesheet/style.css">
     <link rel="stylesheet" href="./assets/stylesheet/style_sp.css">
     <link rel="stylesheet" href="./assets/stylesheet/hamburger.css">
     <link rel="stylesheet" href="./assets/stylesheet/nav.css">
+    <link rel="stylesheet" href="./assets/stylesheet/fadein.css">
+
+    <link rel="stylesheet" href="./assets/stylesheet/slick-theme.css">
 
     <title>心にあたるアクアリウムをコーディネート｜株式会社a.a.c.</title>
   </head>
@@ -30,6 +37,7 @@
 
             <div class="p-nav__containerSP">
               <div class="p-nav__mailSP"><a></a></div>
+
               <div class="p-nav__hamburger">
                 <div class="barTop"></div>
                 <div class="barMiddle"></div>
@@ -40,7 +48,15 @@
 
           <div class="nav-menu">
             <ul class="menu-list">
-              <li class="menu-item">
+              <!-- <div class="p-headerLogo" >
+                <img src="./assets/img/header/header_logo.jpg" alt="">
+              </div> -->
+              <!-- <div class="p-headerTopSP">
+                <div class="p-headerLogo" >
+                  <img src="./assets/img/header/header_logo.jpg" alt="">
+                </div> -->
+
+              <li class="menu-item nav-allow">
                 <a href="#">会社概要</a>
               </li>
               <li class="menu-item drop-menu">
@@ -97,13 +113,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="menu-item nav-allow">
                 <a href="#">お知らせ</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item nav-allow">
                 <a href="#">ブログ</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item nav-allow">
                 <a href="#">通信販売</a>
               </li>
 
@@ -126,13 +142,13 @@
           <!-- <img src="./assets/img/header/main_photo.jpg" alt=""> -->
         </div>
 
-          <h1 class="p-mainTitle">
+          <h1 class="p-mainTitle animation">
             <img src="./assets/img/header/header-title.svg" alt="">
             <p>心にあたるアートやインテリアとして、<span class="br">アクアリウムをコーディネートします。</span><br>
             私たちは感覚の固定概念を変えていきます。</p>
           </h1>
           
-          <div class="p-mainScroll">
+          <div class="p-mainScroll animation">
             <a>
               <img id="p-mainScroll__btn" src="./assets/img/header/header_scrollDown.svg" alt="#">
             </a>
@@ -143,12 +159,12 @@
 
         <!-- INFORMATION -->
         <section class="u-section">
-          <div class="p-information">
+          <div class="p-information animation">
             <h2 class="p-information__title">
               <img src="./assets/img/information/info-title.svg">
             </h2>
 
-            <ul>
+            <ul class="p-information__list">
               <li>
                 <a>
                   <div class="p-information__image">
@@ -201,7 +217,7 @@
         <section class="u-section">
           <div class="p-service">
 
-            <h2 class="p-service__title">
+            <h2 class="p-service__title animation">
               <img src="./assets/img/service/sevice-maintitle.svg" alt="">
               <div class="p-service__titleExplane">
                 <p>個人宅に設置できるインテリアアクアリウムや、イベント・企業様へ設置できるアクアリウムもございます。</p>
@@ -224,7 +240,7 @@
               <img src="./assets/img/service/graybg.png" alt="#">
             </div>
 
-            <div class="p-service__contents">
+            <div class="p-service__contents animation">
               <!-- left -->
               <ul class="p-service__contentsLeft">
                 <li>
@@ -252,7 +268,6 @@
                   <a>
                     <img class="p-service__contentsLeft__image" src="./assets/img/service/flower_aquarium.jpg" alt="#">
                     <img class="p-service__contentsTitle" src="./assets/img/service/flower_aquarium-title.svg" alt="#">
-                    <!-- <p>フラワーアレンジメントと<span class="br">アクアリウムの新しい形</span></p> -->
                     <p>フラワーアレンジメントと<br>アクアリウムの新しい形</p>
                     <div class="allow">
                       <span class="dli-arrow-white"></span>
@@ -291,7 +306,7 @@
 
         <!-- WHO WE ARE -->
         <section class="u-section">
-          <div class="p-introduce">
+          <div class="p-introduce animation">
 
             <div class="p-introduce__cover">
               <!-- left -->
@@ -323,12 +338,11 @@
 
         <!-- PROJECT -->
         <section class="u-section">
-          <div class="p-project">
+          <div class="p-project animation">
             <h2 class="p-project__title">
               <img src="./assets/img/project/project-title.svg" alt="">
 
               <p>個人宅に設置できるインテリアアクアリウムや、イベント・企業様へ設置できるアクアリウムもございます。<br>パターンオーダーから完全オーダーまでご相談内容に応じて世界に1つだけのアクアリウムも可能です。</p>
-              
             </h2>
       
             <ul>
@@ -503,11 +517,15 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <!-- <script src="./assets/javaScript/fadein_sample1.js"></script> -->
-    <!-- <script src="./assets/javaScript/fadein_sample2.js"></script> -->
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- slider読み込み -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/javaScript/fadein.js"></script>
     <script src="./assets/javaScript/scrolldown.js"></script>
     <script src="./assets/javaScript/hamburger.js"></script>
+    <script src="./assets/javaScript/slick.js"></script>
   </body>
 </html>

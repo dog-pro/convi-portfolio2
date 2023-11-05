@@ -4,7 +4,13 @@
 @media screen and (max-width: 768px){
 
 /* header */
-header{}
+header{
+  background-image: url("../img/header/main_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: black;
+}
 
 /* nav */
 /* nav.cssに記載 */
@@ -15,8 +21,8 @@ header{}
 .p-headerTop{
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom:1px solid #fff;
+  padding: 10px 20px;
+  /* border-bottom:1px solid #fff; */
 }
 
 .p-headerLogo{
@@ -57,9 +63,10 @@ header{}
 
 
 .p-mainTitle{
-  position: absolute;
-  top: 85px;
-  left: 35px;
+  /* position: absolute; */
+  /* top: 85px; */
+  /* left: 35px; */
+  padding: 20px 40px 50px;
   color: white; 
 }
 
@@ -69,7 +76,7 @@ header{}
   font-size: 13.6px;
   line-height: 2;
   margin-top: 5px;
-  width: 80%;
+  width: 100%;
 }
 
 .p-mainTitle a img{
@@ -92,24 +99,29 @@ header{}
   margin: 15% 0 10%;
 }
 
-.p-information ul{
+.p-information__list{
   list-style: none;
   display: flex;
   width: 1000px;
   overflow: hidden;
+  /* visibility: hidden; */
 }
 
-.p-information li{
+.p-information__list .slick-initialized{
+  visibility: visible;
+}
+
+.p-information__list li{
   text-align: left;
   margin-bottom: 10px;
 }
 
-.p-information ul img{
-  width: 70%;
+.p-information__list img{
+  width: 80%;
 }
 
-.p-information ul p{
-  font-size: 1.2;
+.p-information__list p{
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -128,6 +140,29 @@ header{}
   position: relative;
   z-index: 1;
 }
+
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+.slick-dots li button {
+  color: none;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #fff; /*ドットボタンの色*/
+}
+
+.slick-dots li.slick-active button:before {
+  /* color: #5471ad; */
+}
+
+
 
 /* SERVICE */
 .p-service{
@@ -395,7 +430,7 @@ header{}
 .p-introduceGray{
   position: absolute;
   z-index: -1;
-  bottom: -7%;
+  bottom: -5%;
   left: 0;
   width: 100%;
   height: 65%;
@@ -582,10 +617,19 @@ header{}
 }
 
 .p-footer__bottom{
-  height: 53px;
+  /* position: relative; */
+  height: 55px;
   align-items: center;
   text-align: center;
   font-size: 15px;
 }
+/* 
+small{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+} */
 
 }

@@ -1,0 +1,19 @@
+
+/*アニメーション要素のスタイル*/
+  .animation{
+   	opacity: 0;
+   	visibility: hidden;
+   	transition: 1s;
+   	transform: translateY(30px);
+  }
+
+/* 今回の処理は下から上にふわっとさせる
+translateY(30px);にしている理由は、下記の.activeが付与された時点で正しい位置に来るようにしないと、正しい位置からさらに上にふわっとなるようになってしまうから */
+
+/*アニメーション要素までスクロールした時のスタイル*/
+  .active{
+   	opacity: 1;
+   	visibility: visible;
+   	transform: translateY(0);
+  }
+  
