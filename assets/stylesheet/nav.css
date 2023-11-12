@@ -31,6 +31,7 @@
     right: 25px;
     background-color: #fff; /* メニューの背景色 */
     color: #333; /* メニューテキストの色 */
+    overflow-y: hidden;
   }
 
   .menu-list {
@@ -114,6 +115,8 @@
   display: none;
   width: 100%;
   position: absolute;
+  top:0;
+  padding-top: 11px;
   background-color: rgba(0,0,0,0.8);/* 背景のみ黒透過 */
   z-index: 2;
 }
@@ -132,8 +135,20 @@
 
 .menu-item{
   position: relative;
-  padding: 20px 0;
-  border-bottom:1px solid #fff;
+  padding: 15px 0;
+  border-top:1px solid #fff;
+}
+
+.menu-item:first-child{
+  background-image: url("../img/header/header_logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  width: 67px;
+  height: 30px;
+
+  margin-bottom: 20px;
 }
 
 .nav-allow::after{

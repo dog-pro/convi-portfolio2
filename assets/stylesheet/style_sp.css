@@ -57,6 +57,7 @@ header{
 }
 
 .u-section{
+  position: relative;
   padding: 10% 5%;
   text-align: -webkit-center;
 }
@@ -112,12 +113,22 @@ header{
 }
 
 .p-information__list li{
+  /* width: 80%; */
+  width: 280px;
   text-align: left;
   margin-bottom: 10px;
 }
 
-.p-information__list img{
+.slick-slide .slick-active{
+  width: 280px;
+}
+
+.p-information__image{
   width: 80%;
+}
+
+.p-information__list img{
+  width: 100%;
 }
 
 .p-information__list p{
@@ -142,12 +153,6 @@ header{
 }
 
 
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-
 .slick-dots li button {
   color: none;
   outline: none;
@@ -157,12 +162,6 @@ header{
   border-radius: 50%;
   background: #fff; /*ドットボタンの色*/
 }
-
-.slick-dots li.slick-active button:before {
-  /* color: #5471ad; */
-}
-
-
 
 /* SERVICE */
 .p-service{

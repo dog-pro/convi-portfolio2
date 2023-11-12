@@ -8,5 +8,6 @@ hamburgerMenu.addEventListener('click', () => {
 $(".p-nav__hamburger").click(function(){
     $(this).toggleClass("open");
     $(".nav-menu").fadeToggle(200);
+    $('.wrapper').toggleClass('close');
     // $(".p-headerTop").fadeToggle(200);
 })

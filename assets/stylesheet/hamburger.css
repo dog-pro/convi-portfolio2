@@ -51,4 +51,11 @@
     transform: translateY(-50%) rotate(-45deg);
   }
 
+.close{
+  /* ハンバーガーメニュー展開時、背景を固定 */
+  /* position: fixed; */
+  /* height: 100%; */
+  /* overflow: hidden; */
+}
+
 }

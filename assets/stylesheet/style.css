@@ -23,8 +23,8 @@ position: relative;
 .p-mainTitle{
   width: 37vw;
   position: absolute;
-  top: 30%;
-  left: 45%;
+  top: 25%;
+  left: 23%;
   transform: translateX(-55%);
 }
 
@@ -40,7 +40,7 @@ position: relative;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 17px;
   margin-top: 6%;
 }
 
