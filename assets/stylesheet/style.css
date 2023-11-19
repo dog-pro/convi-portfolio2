@@ -563,7 +563,7 @@ position: relative;
 
 .p-project ul{
   /* width: 100%; */
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   flex-wrap:wrap;
   margin: 0 auto;
