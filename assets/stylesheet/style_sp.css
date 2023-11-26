@@ -5,10 +5,10 @@
 
 /* header */
 header{
-  background-image: url("../img/header/main_photo.jpg");
+  /* background-image: url("../img/header/main_photo.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   background-color: black;
 }
 
@@ -39,13 +39,23 @@ header{
 }
 
 /* main */
-.p-mainPhoto::before{
+.p-mainPhoto{
   background-image: url("../img/header/main_photo.jpg");
-  /* background-color: black; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  /* opacity: 0.3; */
+  opacity: 0.7;
+  width: 100%;
+  height: 60vh;
+}
+
+.p-mainPhoto::before{
+  /* background-image: url("../img/header/main_photo.jpg"); */
+  /* background-color: black; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: cover; */
+  opacity: 0.5;
   width: 100%;
   height: 100px;
 }
@@ -58,15 +68,16 @@ header{
 
 .u-section{
   position: relative;
-  padding: 10% 5%;
+  padding: 10% 5% 0;
   text-align: -webkit-center;
 }
 
 
 .p-mainTitle{
-  /* position: absolute; */
-  /* top: 85px; */
-  /* left: 35px; */
+  position: absolute;
+  top: 14%;
+  /* left: 50%;
+  transform: translateX(-50%); */
   padding: 20px 40px 50px;
   color: white; 
 }
@@ -97,7 +108,7 @@ header{
 
 .p-information__title{
   width: 70%;
-  margin: 15% 0 10%;
+  margin: 5% 0 10%;
 }
 
 .p-information__list{
@@ -113,14 +124,12 @@ header{
 }
 
 .p-information__list li{
-  /* width: 80%; */
   width: 280px;
   text-align: left;
   margin-bottom: 10px;
 }
 
 .slick-slide .slick-active{
-  width: 280px;
 }
 
 .p-information__image{
@@ -201,12 +210,13 @@ header{
 
 .p-service__gray img{
   position: absolute;
-  top: 3%;
+  top: 0;
   left: 0;
   z-index: -1;
-  width: 56.2vh;
-  height: 250vh;
-  margin: 0 calc(50% - 50vw);
+  width: 100%;
+  /* height: 97%; */
+  height: 100%;
+  margin: 14% 0;
 }
 
 .p-service__contents{
@@ -221,6 +231,7 @@ header{
 
 .p-service__contentsLeft li{
   position: relative;
+  width: 100%;
   height: 277px;
   margin-bottom: 3%;
   color: white;
@@ -244,8 +255,10 @@ header{
   position: absolute;
 
   z-index: 2;
-  bottom: 23%;
+  bottom: 25%;
   left: 10%;
+
+  line-height: 1.5;
   text-align: center;
   font-size: 1rem;
   color: #fff;
@@ -256,10 +269,12 @@ header{
 .p-service__contentsTitle{
   position: absolute;
   z-index: 2;
+  width: 250px;
   top: 22%;
-  left: 10%;
-  width: 80%;
-  margin-bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* max-width: 300px; */
+  /* margin-bottom: 8%; */
 }
 
 /* right */
@@ -296,8 +311,9 @@ header{
   position: absolute;
 
   z-index: 2;
-  bottom: 23%;
+  bottom: 20%;
   left: 10%;
+  line-height: 1.4;
   text-align: center;
   font-size: 1rem;
   color: #fff;
@@ -309,18 +325,20 @@ header{
   position: absolute;
   z-index: 2;
   top: 22%;
-  left: 25%;
-  width: 50%;
-  margin-bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  /* margin-bottom: 8%; */
 }
 
 .p-service__contentsTitleRight{
   position: absolute;
   z-index: 2;
   top: 22%;
-  left: 10%;
-  width: 80%;
-  margin-bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 250px;
+  /* margin-bottom: 8%; */
 }
 
 .br{
@@ -405,6 +423,10 @@ header{
   position: relative;
 }
 
+.p-introduce__cover{
+  margin-top: 20%;
+}
+
 /* left */
 .p-introduceLeft img{
   width: 100%;
@@ -419,7 +441,7 @@ header{
   /* position: absolute;
   z-index: 1; */
   width: 50%;
-  margin: 7%;
+  margin: 7% 7% 13%;
 }
 
 .p-introduceRight__vision{
@@ -428,7 +450,7 @@ header{
 
 .p-introduceRight__visionSP{
   position: absolute;
-  bottom: 30%;
+  bottom: 32%;
   right: 8%;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
@@ -468,6 +490,7 @@ header{
 
 .p-project__title img{
   width: 70%;
+  margin-top: 13%;
 }
 
 .p-project ul{
@@ -507,21 +530,28 @@ header{
   font-weight: bold;
 }
 
+.p-project__case > p{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+.p-project__content{
+  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
 .p-project__link{
   width: 70%;
   height: 10%;
   border: #00b2ed 2px solid;
   padding: 5%;
-  margin: 15% 0 5%;
+  margin: 15% 0;
   font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
   font-weight: bold;
-}
-
-.p-project ul li p{
-  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
-  font-weight: bold;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
 }
 
 .p-project__linkButton{

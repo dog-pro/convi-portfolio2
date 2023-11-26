@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list
 {
@@ -116,7 +116,8 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
 }
 
 .slick-dots
@@ -127,7 +128,6 @@
     display: block;
     width: 12%;
     height: 30px;
-    background-color: aquamarine;
     padding: 0;
     margin: 0;
     list-style: none;

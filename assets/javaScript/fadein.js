@@ -1,7 +1,8 @@
 // 配列に各要素を格納して発火
 $(function(){
-  var targets = [".p-mainTitle",".p-mainScroll",".p-information", ".p-service__title",".p-service__contents",".p-introduce",".p-project"];
-    var flags = [true, true, true, true, true, true, true];
+  $('.p-mainScroll').addClass('active');
+  var targets = [".p-mainTitle",".p-information", ".p-service__title",".p-service__contents",".p-introduce",".p-project"];
+    var flags = [true, true, true, true, true, true];
     //[true(.p-information), true(.p-service)];
     //発火させたい要素を増やすならその分のtrueも増やす
 
