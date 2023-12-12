@@ -124,6 +124,8 @@
 {
     position: absolute;
     bottom: 2px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     left: 11%;
     display: block;
     width: 12%;
