@@ -607,7 +607,8 @@ header{
 }
 
 .p-contact__title img{
-  width: 45%;
+  /* width: 45%; */
+  width: 210px;
 }
 
 .p-contact__title p{

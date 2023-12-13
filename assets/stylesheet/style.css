@@ -4,9 +4,9 @@
 /* @media screen and (min-width: 769px) { */
 @media screen and (min-width: 801px) {
 
-  * {
+  /* * {
     outline: 1px solid magenta;
-  }
+  } */
 
 /* header */
 header{
@@ -95,7 +95,7 @@ header{
   padding: 4% 0 7%;
   max-width: 1040px;
   /* width: 100%; */
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .p-information__title{
