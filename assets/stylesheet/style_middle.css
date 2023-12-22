@@ -329,7 +329,8 @@ header{
 
 /* right */
 .p-service__contentsRight{
-  width: 100%;
+  width: 98%;
+  margin-right: 1%;
 }
 
 .p-service__contentsRight > div {
