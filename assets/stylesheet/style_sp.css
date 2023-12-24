@@ -249,6 +249,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsLeft p{
@@ -305,6 +306,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsRight p{

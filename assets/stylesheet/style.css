@@ -35,8 +35,8 @@ header{
 }
 
 .p-mainTitle{
-  /* width: 32vw; */
-  width: 40%;
+  /* width: 40%; */
+  width: 500px;
   position: absolute;
   top: 27%;
   left: 23%;
@@ -99,7 +99,7 @@ header{
 /* INFORMATION */
 .p-information{
   padding: 4% 0 7%;
-  max-width: 1040px;
+  /* max-width: 1040px; */
   /* width: 100%; */
   margin: 0 auto 20px;
 }
@@ -213,7 +213,7 @@ header{
   padding: 80px 0 180px;
   max-width: 1200px;
   /* width: 100%; */
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto;
 }
 
@@ -247,6 +247,17 @@ header{
   display: none;
 }
 
+.p-service__ImageCover{
+  /* position: absolute; */
+  display: flex;
+  position: relative;
+  height: 1000px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
 .p-service__mainImage{
   background-image: url("../img/service/service-main.jpg");
   background-size: cover;
@@ -254,29 +265,36 @@ header{
   background-repeat: no-repeat;
   position: absolute;
   /* width: 79%; */
-  width: 91%;
-  margin: 0 calc(50% - 50vw);
-  height: 890px;
-  top: -7%;
-  right: 0;
+  /* width: 100%; */
+  width: 1310px;
+  /* margin: 0 calc(50% - 50vw); */
+  height: 110vh;
+  /* height: 890px; */
+  top:0%;
+  /* top: -7%; */
+  right: -30%;
+  /* right: 0; */
   z-index: -1;
-}
-
-.p-service__mainImage img{
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
 }
 
 .p-service__gray{
+  background-image: url("../img/service/graybg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: absolute;
-  /* width: 50vw; */
-  width: 40%;
-  /* margin: 0 calc(50% - 50vw); */
-  height: 835px;
-  bottom: 0;
+  width: 50vw;
+  /* width: 40%; */
+  margin: 0 calc(50% - 50vw);
+  /* height: 835px; */
+  height: 960px;
+  /* bottom: 0; */
+  bottom: 3%;
   /* left: 0; */
   left: -120px;
   z-index: -2;
+  object-fit: cover;
 }
 
 .p-service__gray img{
@@ -288,7 +306,7 @@ header{
 .p-service__contents{
   /* position: absolute; */
   /* top: 30%; */
-  width: 1200px;
+  /* width: 1200px; */
   /* width: 100%; */
   margin: 0 auto;
   display: flex;
@@ -321,6 +339,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsLeft__image:hover{
@@ -403,6 +422,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsRight__image:hover{
@@ -781,6 +801,7 @@ header{
 .p-contact__left img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* right */
@@ -792,6 +813,7 @@ header{
 .p-contact__right img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* center */

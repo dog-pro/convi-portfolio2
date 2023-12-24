@@ -349,6 +349,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsRight__image:hover{
@@ -371,6 +372,7 @@ header{
   height: 100%;
   display: block;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .p-service__contentsRight div p{
