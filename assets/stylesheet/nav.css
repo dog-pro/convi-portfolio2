@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 /* PC style */
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px)  */
+@media screen and (min-width: 800px) 
+{
   nav{
     position: absolute;
     z-index: 1;
@@ -13,7 +15,6 @@
   .p-nav__mail{
     position: relative;
     width: 100px;
-    /* height: 90px; */
     height: 96px;
     background-image: url("../img/mail.png");
     background-repeat: no-repeat;
@@ -21,17 +22,15 @@
     background-size: 50%;
     background-color: #00b2ed;
   }
-    
+
   .p-nav__containerSP{
     display: none;
   }
-  
+
   /* ナビゲーションメニュー */
   .nav-menu {
-    /* width: 70%; */
     position: absolute;
     top: 0;
-    /* right: 25px; */
     right: 0;
     background-color: #fff; /* メニューの背景色 */
     color: #333; /* メニューテキストの色 */
@@ -46,7 +45,6 @@
   }
 
   .menu-item {
-    /* width: 12%; */
     margin: 0 10px;
     padding: 20px 0;
     box-sizing: border-box;
@@ -110,134 +108,115 @@
     background-color: white; /* ドロップダウンメニューの背景色 */
     transition: opacity 0.3 .3s; /* 不透明度の変化をアニメーション化 */
   }
-
 }
 
 
 
 /* SP style */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
 
   nav{
     position: absolute;
     z-index: 1;
-  /* position: relative; */
-  /* display: none; */
+    width: 100%;
+  }
 
-  /* background-color: black; */
-  /* opacity: 0.7; */
-}
+  .nav-menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+    top:0;
+    padding-top: 11px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+  }
 
-.nav-menu{
-  display: none;
-  width: 100%;
-  height: 100vh;
-  overflow: scroll;
-  position: absolute;
-  top:0;
-  padding-top: 11px;
-  background-color: rgba(0,0,0,0.8);/* 背景のみ黒透過 */
-  z-index: 2;
-}
+  .menu-list{
+    text-decoration: none;
+    padding: 0 20px;
+    font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+    font-weight: bold;
+  }
 
-.menu-list{
-  text-decoration: none;
-  padding: 0 20px;
-  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
-  font-weight: bold;
-}
+  .menu-list a{
+    text-decoration: none;
+    color: white;
+  }
 
-.menu-list a{
-  text-decoration: none;
-  color: white;
-}
+  .menu-item{
+    position: relative;
+    padding: 15px 0;
+    border-top:1px solid #fff;
+  }
 
-.menu-item{
-  position: relative;
-  padding: 15px 0;
-  border-top:1px solid #fff;
-}
+  .menu-item:first-child{
+    position: relative;
+    padding:0 0 15px;
+    border-top:none;
+  }
 
-.menu-item:first-child{
-  background-image: url("../img/header/header_logo.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  .menu-item__image{
+    width: 20%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
-  width: 67px;
-  height: 30px;
+  .nav-allow::after{
+    position: absolute;
+    right: 0;
+    content: "≻";
+    color: #fff;
+    padding: 0 20px;
+  }
 
-  margin-bottom: 20px;
-}
+  .menu-item > a{
+    font-size: 1.5em;
+    font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+    font-weight: bold;
+  }
 
-.nav-allow::after{
-  position: absolute;
-  right: 0;
-  content: "≻";
-  color: #fff;
-  padding: 0 20px;
-}
+  .drop-menu-list{
+    margin-top: 10px;
+  }
 
-.menu-item > a{
-  padding: 20px 0;
+  .drop-menu-item{
+    line-height: 2.5;
+  }
 
-  font-size: 1.5em;
-  font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
-  font-weight: bold;
-}
+  .p-nav__container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    opacity: 0.5;
+  }
 
-.drop-menu{
-}
+  .p-nav__mailSP{
+    width: 55px;
+    height: 55px;
+    border: 1.5px solid #00b2ed;
+    background-color: #00b2ed;
+    background-image: url("../img/mail.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+  }
 
-.drop-menu-list{
-  margin-top: 10px;
-}
+  .p-nav__containerSP{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
 
-.drop-menu-item{
-  line-height: 2.5;
-}
-
-.p-nav__container{
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 90%;
-  background-color: black;
-  opacity: 0.5;
-}
-
-.p-nav__mailSP{
-  width: 55px;
-  height: 55px;
-  border: 1.5px solid #00b2ed;
-  background-color: #00b2ed;
-  background-image: url("../img/mail.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50%;
-}
-
-.p-nav__containerSP{
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 3;
-}
-
-.open{
-  overflow: hidden;
-  /* height: 100%; */
-  /* background-color: black; */
-  /* opacity: 0.7; */
-}
-
-/* 800px～641px */
-@media screen and (min-width:641px) and ( max-width:800px) {
-
-
-}
-
+  .open{
+    overflow: hidden;
+  }
 }

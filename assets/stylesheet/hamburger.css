@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 /* SP style */
-@media screen and (max-width: 768px){
-
+/* @media screen and (max-width: 768px) */
+@media screen and (max-width: 800px)
+{
   /* ハンバーガーメニューのボタン本体 */
   .p-nav__hamburger{
     width: 55px;
@@ -19,10 +20,9 @@
     width: 45%;
     position: absolute;
     left: 30%;
-    /* transition: all 0.3s; */
-    /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
   }
-  
+
   /* ハンバーガーメニューの各３本線 */
   .barTop{
     top: 30%;
@@ -40,23 +40,22 @@
     background-color: black;
     transform: translateY(-50%) rotate(45deg);
   }
-  
+
   .p-nav__hamburger.active > .barMiddle{
     display: none;
   }
-  
+
   .p-nav__hamburger.active > .barBottom{
     top: 50%;
     background-color: black;
     transform: translateY(-50%) rotate(-45deg);
   }
 
-
-.close{
-  /* ハンバーガーメニュー展開時、背景を固定 */
-  /* position: fixed; */
-  /* height: 100%; */
-  overflow: hidden;
+  .close{
+    /* ハンバーガーメニュー展開時、背景を固定 */
+    /* position: fixed; */
+    /* height: 100%; */
+    overflow: hidden;
 }
 
 }
