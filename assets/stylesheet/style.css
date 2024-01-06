@@ -177,7 +177,8 @@
   .p-service{
     position: relative;
     padding: 80px 0 180px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 1100px;
     margin: 0 auto;
   }
 
@@ -199,6 +200,7 @@
     text-align: left;
     margin-top: 50px;
     line-height: 1.5;
+    letter-spacing: -0.1em;
   }
 
   .p-service__titleExplane p:last-child{
@@ -225,9 +227,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
-    width: 1310px;
-    height: 120vh;
-    top:170%;
+    width: 1320px;
+    /* height: 120vh; */
+    height: 100%;
+    top:175%;
     right: 0;
     z-index: -1;
     object-fit: cover;
@@ -239,9 +242,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
-    width: 50vw;
+    width: 37vw;
     margin: 0 calc(50% - 50vw);
-    height: 115vh;
+    /* height: 115vh; */
+    height: 97%;
     top: 183%;
     left: 0;
     z-index: -2;
@@ -372,12 +376,13 @@
     width: 100%;
     position: absolute;
     z-index: 2;
-    bottom: 35%;
+    bottom: 30%;
     text-align: center;
     font-size: 1rem;
     color: #fff;
     font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
     font-weight: bold;
+    line-height: 1.5;
   }
 
   .allow{
@@ -393,15 +398,15 @@
     line-height: 1;
     position: relative;
     width: 3.5em;
-    height: 0.2em;
+    height: 0.1em;
     background: currentColor;
   }
 
   .dli-arrow-white::before {
     content: '';
-    width: 1em;
+    width: 0.7em;
     height: -0.35em;
-    border: 0.2em solid currentColor;
+    border: 0.1em solid currentColor;
     border-left: 0;
     border-bottom: 0;
     transform: rotate(45deg);
@@ -732,7 +737,7 @@
     z-index: 1;
     height: 355px;
     max-width: 450px;
-    padding: 80px 40px;
+    padding: 80px 50px;
     text-align: center;
     background-color: #005fa7;
     color: #fff;
@@ -750,7 +755,7 @@
   }
 
   .p-contact__title img{
-    width: 70%;
+    width: 65%;
   }
 
   .p-contact__title p{
@@ -819,7 +824,7 @@
 
   .p-contact__form:hover .p-project__allowBlue{
     transition: 0.3s;
-    transform: translateX(10px);
+    transform: translateX(-10px);
   }
 
   .p-contact__tel{
@@ -867,7 +872,7 @@
     width: 50%;
     height: 100%;
     text-align: right;
-    margin-right: 10%;
+    margin-right: 6%;
   }
 
   .p-footer__topImage a img{
@@ -913,7 +918,7 @@
   }
 
   small{
-    font-size: 11px;
+    font-size: 12px;
     font-family: YakuHanJP, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   }
 
