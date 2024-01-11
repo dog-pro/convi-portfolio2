@@ -194,23 +194,3 @@
     opacity: .75;
     color: #00b2ed;
 }
-
-/* 800px～641px */
-@media screen and (min-width:641px) and ( max-width:800px) {
-    /* .slick-dots
-    {
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        bottom: 2px;
-        left: 24%;
-        display: block;
-        width: 12%;
-        height: 30px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        text-align: center;
-    } */
-    
-}
