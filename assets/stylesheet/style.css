@@ -29,7 +29,8 @@
   }
 
   .p-mainTitle{
-    width: 35vw;
+    /* width: 35vw; */
+    width: 40%;
     position: absolute;
     top: 27%;
     left: 23%;
@@ -58,12 +59,10 @@
     transition: 1s;
   }
 
-  #p-mainScroll__btn{
-    /* width:30px; */
+  /* #p-mainScroll__btn{
     width: 2vw;
-    /* height: 70px; */
     height: 4vw;
-  }
+  } */
 
   .p-headerLogo{
     cursor: pointer;

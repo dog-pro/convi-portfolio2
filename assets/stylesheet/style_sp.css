@@ -98,7 +98,7 @@
     list-style: none;
     display: flex;
     /* width: 1000px; */
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .p-information__list .slick-initialized{
