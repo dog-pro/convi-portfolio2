@@ -97,7 +97,7 @@
   .p-information__list{
     list-style: none;
     display: flex;
-    width: 1000px;
+    /* width: 1000px; */
     overflow: hidden;
   }
 
@@ -106,12 +106,9 @@
   }
 
   .p-information__list li{
-    width: 280px;
+    /* width: 124px !important; */
     text-align: left;
     margin-bottom: 10px;
-  }
-
-  .slick-slide .slick-active{
   }
 
   .p-information__image{
