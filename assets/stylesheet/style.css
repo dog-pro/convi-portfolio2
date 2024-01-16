@@ -70,7 +70,12 @@
 
   .p-headerLogo img{
     /* width: 10vw; */
-    width: 10%;
+    /* width: 10%; */
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   /* main */
