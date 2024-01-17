@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* SP style */
-/* @media screen and (max-width: 768px) */
 @media screen and (max-width: 800px)
 {
   /* ハンバーガーメニューのボタン本体 */
@@ -20,7 +19,6 @@
     width: 45%;
     position: absolute;
     left: 30%;
-  /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
   }
 
   /* ハンバーガーメニューの各３本線 */
@@ -53,15 +51,7 @@
 
   .close{
     /* ハンバーガーメニュー展開時、背景を固定 */
-    /* position: fixed; */
     height: 100%;
-    overflow: hidden;
-    
-    /* background-attachment: fixed;  */
-    /* スクロール時に固定。 */
-    /* background-attachment: scroll; */
-    /* 初期値。他の要素と一緒にスクロールする。 */
-    
-}
-
+    overflow: hidden;  
+  }
 }

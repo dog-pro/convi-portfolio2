@@ -96,7 +96,6 @@
   .p-information__list{
     list-style: none;
     display: flex;
-    /* width: 1000px; */
     overflow: hidden;
   }
 
@@ -441,12 +440,12 @@
   }
 
   .p-introduce__company{
-      width: 60%;
-      height: 20%;
-      padding: 8% 5%;
-      margin-left: 15%;
-      text-align: left;
-      background-color: white;
+    width: 60%;
+    height: 20%;
+    padding: 8% 5%;
+    margin-left: 15%;
+    text-align: left;
+    background-color: white;
   }
 
   .p-introduce__company p{

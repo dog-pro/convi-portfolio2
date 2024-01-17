@@ -97,7 +97,6 @@
   .p-information__list{
     list-style: none;
     display: flex;
-    /* width: 1000px; */
     overflow-x: hidden;
   }
 
@@ -106,7 +105,6 @@
   }
 
   .p-information__list li{
-    /* width: 124px !important; */
     text-align: left;
     margin-bottom: 10px;
   }
@@ -140,28 +138,6 @@
     z-index: 1;
   }
 
-  /* .slick-dots {
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    margin-top: 15px;
-  }
-  .slick-dots li {
-  position: relative;
-  display: inline-block;
-  margin: 0 7px;
-  max-width: 13px;
-  padding: 0;
-  border: 1px solid #707070;
-  width: 13px;
-  height: 13px;
-  border-radius: 100%;
-  cursor: pointer;
-  } */
-
   .slick-dots li button {
     color: none;
     outline: none;
@@ -173,7 +149,6 @@
   }
 
   /* SERVICE */
-
   .p-service__titleSP img{
     width: 100%;
   }
@@ -452,12 +427,12 @@
   }
 
   .p-introduce__company{
-      width: 60%;
-      height: 20%;
-      padding: 8% 5%;
-      margin-left: 15%;
-      text-align: left;
-      background-color: white;
+    width: 60%;
+    height: 20%;
+    padding: 8% 5%;
+    margin-left: 15%;
+    text-align: left;
+    background-color: white;
   }
 
   .p-introduce__company p{
