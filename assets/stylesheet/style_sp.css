@@ -109,6 +109,11 @@
     margin-bottom: 10px;
   }
 
+  .p-information__list li > a{
+    text-decoration-line: none;
+    color: black;
+  }
+
   .p-information__image{
     width: 80%;
   }
@@ -466,6 +471,11 @@
     text-align: left;
   }
 
+  .p-project ul li > a{
+    text-decoration-line: none;
+    color:black
+  }
+
   .p-project ul img{
     width: 100%;
   }
@@ -511,6 +521,11 @@
     margin: 15% 0;
     font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
     font-weight: bold;
+  }
+
+  .p-project__link > a{
+    text-decoration-line: none;
+    color: black;
   }
 
   .p-project__linkButton{
