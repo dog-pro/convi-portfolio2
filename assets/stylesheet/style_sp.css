@@ -22,7 +22,7 @@
 
   .p-headerLogo{
     width: 20%;
-    cursor: pointer;
+    
   }
 
   .p-headerLogo img{
@@ -120,6 +120,7 @@
 
   .p-information__list img{
     width: 105%;
+    
   }
 
   .p-information__list p{
@@ -212,7 +213,7 @@
     font-weight: bold;
     display: inline-block;
     background-color: black;
-    cursor: pointer;
+    
   }
 
   .p-service__contentsLeft__image{
@@ -260,7 +261,7 @@
     font-weight: bold;
     display: inline-block;
     background-color: black;
-    cursor: pointer;
+    
   }
 
   .p-service__contentsRight__image{
@@ -438,6 +439,7 @@
     margin-left: 15%;
     text-align: left;
     background-color: white;
+    
   }
 
   .p-introduce__company p{
@@ -478,6 +480,7 @@
 
   .p-project ul img{
     width: 100%;
+    
   }
 
   .p-project__customer{
