@@ -611,7 +611,7 @@
     font-weight: bold;
   }
 
-  .p-contact__tel{
+  .p-contact__telContainer{
     width: 330px;
     height: 80px;
     display: flex;
@@ -622,8 +622,12 @@
     border: #fff 2px solid;
   }
 
-  .p-contact__tel img{
-    width: 70%;
+  .p-contact__tel{
+    font-family: YuGothic, "Yu Gothic", Meiryo, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 23px;
+    /* width: 70%; */
   }
 
   .p-contact__openhour{
